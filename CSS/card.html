@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+        }
+        .container {
+            max-width: 1200px;
+            margin-inline: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col {
+            width: 25%;
+        }
+        .card {
+            /* border: 1px solid #f00; */
+            background-color: #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card-body {
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://picsum.photos/id/23/800/600" alt="">
+                </div>
+                <div class="card-body">
+                    <h3>title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, natus?
+                    </p>
+                    <a href="#">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
