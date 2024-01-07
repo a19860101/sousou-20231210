@@ -29,12 +29,17 @@
             background-color: #d5fbff;
             border-radius: 10px;
             overflow: hidden;
-            border: 2px solid transparent;
-            transition: 600ms;
+            outline: 5px solid transparent;
+            
+            transition: 1600ms;
 
         }
         .card:hover {
-            border: 2px solid #c64242;
+            outline: 5px solid #000;
+            outline-offset: 5px;
+            /* box-shadow: 0px 0px 0px 10px red; */
+            /* box-shadow: 0px 3px 15px 5px rgb(255 0 0 /.5); */
+            /* x y 模糊 擴展 色彩 */
         }
         .card-header {
             background-color: #f00;
