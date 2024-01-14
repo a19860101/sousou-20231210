@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin-inline: auto;
+            display: flex;
+            flex-wrap:  wrap;
+        }
+        .col {
+            flex:0 0 100%;
+            padding: 15px;
+        }
+        @media(min-width: 720px){
+            .col {
+                flex:0 0 calc(100% / 2);
+            }
+        }   
+        @media(min-width: 1200px){
+
+            .col {
+                flex:0 0 calc(100% / 4);
+            }
+        }   
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rem officia at nobis nostrum. Iusto temporibus mollitia atque nam, tempore sunt reprehenderit? Provident corrupti quo accusantium? Quasi provident sequi cumque!
+            </p>
+        </div>
+        <div class="col">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rem officia at nobis nostrum. Iusto temporibus mollitia atque nam, tempore sunt reprehenderit? Provident corrupti quo accusantium? Quasi provident sequi cumque!
+            </p>
+        </div>
+        <div class="col">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rem officia at nobis nostrum. Iusto temporibus mollitia atque nam, tempore sunt reprehenderit? Provident corrupti quo accusantium? Quasi provident sequi cumque!
+            </p>
+        </div>
+        <div class="col">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rem officia at nobis nostrum. Iusto temporibus mollitia atque nam, tempore sunt reprehenderit? Provident corrupti quo accusantium? Quasi provident sequi cumque!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
