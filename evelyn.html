@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;1000&family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;400;900&family=Noto+Serif+TC:wght@400;700;900&family=Nunito:wght@200;400;1000&family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         .myContainer {
@@ -20,8 +20,10 @@
                     center: true
                 },
                 fontFamily:{
-                    'sans':['Nunito'],
+                    'sans':['Nunito,Noto Sans TC'],
                     'serif':['Playfair Display'],
+                    'nt-serif':['Noto Serif TC']
+                    
                 },
                 extend:{
                     colors:{
@@ -67,7 +69,7 @@
             </div>
         </div>
         <div class="myContainer flex flex-wrap mx-auto">
-            <h3 class="text-center w-full text-3xl py-4">UI/UX</h3>
+            <h3 class="text-center w-full text-3xl py-4 font-serif font-black">UI/UX</h3>
             <div class="w-full px-4 mt-24">
                 <div class="bg-zinc-300 rounded-[50px] h-[460px] flex">
                     <div class="w-1/3">
@@ -100,7 +102,7 @@
     </section>
     <section class="pb-8">
         <div class="myContainer flex flex-wrap mx-auto">
-            <h3 class="text-center w-full text-3xl py-8">平面設計</h3>
+            <h3 class="text-center w-full text-3xl py-8 font-nt-serif font-black">平面設計</h3>
             <div class="w-full px-4 py-4">
                 <div class="bg-zinc-300 rounded-[50px] h-[460px] flex">
                     <div class="w-full flex flex-col">
