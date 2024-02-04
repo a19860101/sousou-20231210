@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;1000&family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         .myContainer {
             width: 812px;
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme:{
+                container:{
+                    center: true
+                },
+                fontFamily:{
+                    'sans':['Nunito'],
+                    'serif':['Playfair Display'],
+                },
+                extend:{
+                    colors:{
+                        'pink':'pink'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
-    <nav class="flex justify-between px-6 py-10 border-b-2 border-dashed border-rose-400">
+    <nav class="flex justify-between px-6 py-10 border-b-2 border-dashed border-rose-400 bg-pink">
         <a href="#" class="text-rose-400">Logo</a>
         <div class="space-x-6">
             <a href="#" class="text-rose-400">ABOUT</a>
@@ -21,9 +42,9 @@
         </div>
     </nav>
     <section class="py-20 border-b-2 border-black">
-        <div class="myContainer flex flex-wrap mx-auto items-center">
+        <div class="container flex flex-wrap mx-auto items-center">
             <div class="w-1/2 px-4 space-y-8">
-                <h1 class="text-6xl font-bold">HELLO,<br>I'm <span class="text-rose-400">Evelyn</span></h1>
+                <h1 class="text-6xl font-bold font-serif">HELLO,<br>I'm <span class="text-rose-400">Evelyn</span></h1>
                 <div class="text-xl font-bold">Graphic Designer</div>
                 <p>
                     學生證件支撐最多阿摩斯難道重複根據，禮物造型頓時金屬，一場。
